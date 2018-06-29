@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#score {
+  width: 100%;
+}
+
+#board {
+  width: 640px;
+  height: 640px;
+  margin: 1em auto;
+}
+
+#board  > div {
+  border: 1px solid black;
+  float: left;
+  width: 64px;
+  height: 64px;
+}
+
+
+#score div {
+  width: 10em;
+  height: 3em;
+  text-align: center;
+  padding: 0.5em;
+  background-color: rgba(211,211,211, 0.75);
+  border: 1px solid lightgray;
+  border-radius: 1px;
+  box-shadow: 1px 1px 5px 1px lightgray;
+  margin: 1em auto;
+}
+
+
+.furry {
+  background-image: url('../images/furry.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coin {
+  background-image: url('../images/coin.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#over {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  padding: 10px;
+  background-color: rgba(255, 255, 0, 0.75);
+}
+
+
+/*section#over .button {*/
+  /*width: 20vw;*/
+  /*display: inline-block;*/
+  /*position: absolute;*/
+  /*left: 40vw;*/
+  /*top: 40vh;*/
+  /*padding: 10px;*/
+  /*border-radius: 5px;*/
+  /*font-size: 2em;*/
+  /*text-transform: uppercase;*/
+  /*font-weight: lighter;*/
+  /*font-family: 'Raleway', sans-serif;*/
+  /*color: #fff;*/
+  /*background: rgba(73,155,234,1);*/
+  /*background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,0.58) 100%);*/
+  /*background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,0.58)));*/
+  /*background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,0.58) 100%);*/
+  /*background: -o-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,0.58) 100%);*/
+  /*background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,0.58) 100%);*/
+  /*background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(32,124,229,0.58) 100%);*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=0 );*/
+
+  /*cursor: pointer;*/
+/*}*/
+
+/*.button:hover {*/
+  /*-webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);*/
+  /*-moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);*/
+  /*box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);*/
+  /*-webkit-transition: box-shadow 0.5s ease;*/
+  /*transition: box-shadow 0.5s ease;*/
+/*}*/
+
+.invisible {
+  display: none;
+}
+
+#over {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
